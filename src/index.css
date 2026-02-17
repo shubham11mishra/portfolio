@@ -1,0 +1,141 @@
+/* Navbar styles */
+.navbar {
+  background: #1a1d29;
+  border-bottom: 1px solid #333642;
+  padding: 0.75rem 2rem;
+  margin: -2rem -2rem 2rem -2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.navbar-list li {
+  margin: 0;
+}
+
+.navbar-list a {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.navbar-list a:hover {
+  color: #e0e0e0;
+  background-color: rgba(100, 108, 255, 0.15);
+}
+
+.navbar-list a.active {
+  color: #646cff;
+  background-color: rgba(100, 108, 255, 0.2);
+}
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  #root > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: left;
+  }
+  
+  #root > div > .card {
+    flex: 1 1 300px;
+  }
+  
+  .card {
+    padding: 1.5rem;
+    background: #1a1d29;
+    border-radius: 10px;
+    border: 1px solid #333642;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    min-height: 160px;
+  }
+  
+  .card.red {
+    background: #4a1515;
+  }
+  
+  .card.blue {
+    background: #151a2e;
+  }
+  
+  .card.yellow {
+    background: yellow;
+  }
+  .card p {
+    margin: 0;
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
+  .input {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: #e0e0e0;
+    width: 100%;
+    max-width: 280px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #646cff;
+    box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.3);
+  }
+  
+  .input::placeholder {
+    color: #666;
+  }
+      
